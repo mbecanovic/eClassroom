@@ -1,0 +1,107 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = eUcionica
+build_property.RootNamespace = eUcionica
+build_property.ProjectDir = C:\Users\burag\OneDrive\Desktop\eUcionica\eUcionica\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\burag\OneDrive\Desktop\eUcionica\eUcionica
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/burag/OneDrive/Desktop/eUcionica/eUcionica/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burag/OneDrive/Desktop/eUcionica/eUcionica/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burag/OneDrive/Desktop/eUcionica/eUcionica/Pages/Oblasti/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT2JsYXN0aVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burag/OneDrive/Desktop/eUcionica/eUcionica/Pages/Oblasti/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT2JsYXN0aVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burag/OneDrive/Desktop/eUcionica/eUcionica/Pages/Oblasti/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT2JsYXN0aVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burag/OneDrive/Desktop/eUcionica/eUcionica/Pages/Oblasti/Oblasti.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT2JsYXN0aVxPYmxhc3RpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burag/OneDrive/Desktop/eUcionica/eUcionica/Pages/Pitanja/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGl0YW5qYVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burag/OneDrive/Desktop/eUcionica/eUcionica/Pages/Pitanja/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGl0YW5qYVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burag/OneDrive/Desktop/eUcionica/eUcionica/Pages/Pitanja/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGl0YW5qYVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burag/OneDrive/Desktop/eUcionica/eUcionica/Pages/Pitanja/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGl0YW5qYVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burag/OneDrive/Desktop/eUcionica/eUcionica/Pages/Pitanja/Pitanja.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGl0YW5qYVxQaXRhbmphLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burag/OneDrive/Desktop/eUcionica/eUcionica/Pages/Predmeti/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlZG1ldGlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burag/OneDrive/Desktop/eUcionica/eUcionica/Pages/Predmeti/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlZG1ldGlcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burag/OneDrive/Desktop/eUcionica/eUcionica/Pages/Predmeti/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlZG1ldGlcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burag/OneDrive/Desktop/eUcionica/eUcionica/Pages/Predmeti/Predmeti.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlZG1ldGlcUHJlZG1ldGkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burag/OneDrive/Desktop/eUcionica/eUcionica/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burag/OneDrive/Desktop/eUcionica/eUcionica/Pages/Test/Generisanje.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdFxHZW5lcmlzYW5qZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burag/OneDrive/Desktop/eUcionica/eUcionica/Pages/Test/Rezultat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdFxSZXp1bHRhdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burag/OneDrive/Desktop/eUcionica/eUcionica/Pages/Test/Test.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdFxUZXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burag/OneDrive/Desktop/eUcionica/eUcionica/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burag/OneDrive/Desktop/eUcionica/eUcionica/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burag/OneDrive/Desktop/eUcionica/eUcionica/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-v6zfz9zx1l
