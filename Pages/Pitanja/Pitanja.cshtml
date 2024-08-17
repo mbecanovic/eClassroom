@@ -1,0 +1,64 @@
+﻿@page
+@model eUcionica.Pages.Pitanja.PitanjaModel
+@{
+    ViewData["Title"] = "Pitanja";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+    
+<h1>Pitanja</h1>
+
+<form method="post">
+    <input type="text" asp-for="SearchText">
+    <input type="submit" value="Pretraži">
+</form>
+
+<h1></h1>
+
+<table class="table table-bordered table-success table-hover">
+    <thead>
+        <tr>
+            <th>
+                Naziv predmeta
+            </th>
+            <th>
+                Naziv oblasti
+            </th>
+            <th>
+                Pitanje
+            </th>
+            <th>
+                Nivo
+            </th>
+            
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Pitanja)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Predmet.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Oblast.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Pitanje)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nivo)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.ID">Izmeni</a> |
+                    <a asp-page="./Details" asp-route-id="@item.ID">Pogledaj više</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.ID">Obrisi</a> 
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+<p>
+    <a asp-page="Create">Dodaj novo pitanje</a>
+</p>

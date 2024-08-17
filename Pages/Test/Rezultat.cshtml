@@ -1,0 +1,86 @@
+﻿@page
+@model eUcionica.Pages.Test.RezultatModel
+@{
+    ViewData["Title"] = "Rezultat testa";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<script>
+    console.log(@Model.TacniOdgovori);
+    console.log("Broj pitanja   "@Model.BrojPitanja);
+    console.log(@Html.Raw(Json.Serialize(Model.TacnaPitanja))); 
+</script>
+
+@if (Model.TacniOdgovori.HasValue)
+{
+    <h2>Pregled rezultata</h2>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Pitanje</th>
+                <th>Tacan odgovor</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.TacnaPitanja != null && Model.TacnaPitanja.Any())
+            {
+                @if (Model.TacniOdgovori == Model.BrojPitanja)
+                {
+                    <p>Cestitamo! Odgovorili ste na sva pitanja!</p>
+                }
+                else
+                {
+                    <p>Cestitamo! Odgovorili ste na @Model.TacniOdgovori pitanja.</p>
+                }
+
+                @foreach (var pitanje in Model.TacnaPitanja)
+                {
+                    <tr class="table-success">
+                        <td>@pitanje.Pitanje</td>
+                        <td>@pitanje.Odgovor</td>
+                    </tr>
+                }
+            }
+
+            @if (Model.NetacnaPitanja.Any())
+            {
+                @foreach (var pitanje in Model.NetacnaPitanja)
+                {
+                    <tr class="table-danger">
+                        <td>
+                            @pitanje.Pitanje
+                        </td>
+                        <td>
+                            <span id="odgovor_@pitanje.ID" style="display:none;">@pitanje.Odgovor</span>
+                        </td>
+                    </tr>
+                }
+                <tr>
+                <tr>
+                    <td colspan="2">Imate @Model.NetacnaPitanja.Count() netacnih pitanja</td>
+                </tr>
+                    <td colspan="2" class="text-center mt-4">
+                        <button type="button" class="btn btn-primary" onclick="prikaziSveOdgovore()">Prikaži netacne odgovore</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<a asp-page="./Test" class="btn btn-secondary">Vrati se nazad</a>
+
+
+<script>
+    function prikaziSveOdgovore() {
+        var odgovoriElementi = document.querySelectorAll("[id^='odgovor_']");
+        odgovoriElementi.forEach(function (element) {
+            if (element.style.display === "none") {
+                element.style.display = "inline"; // Prikaži odgovor
+            } else {
+                element.style.display = "none"; // Sakrij odgovor
+            }
+        });
+    }
+</script>

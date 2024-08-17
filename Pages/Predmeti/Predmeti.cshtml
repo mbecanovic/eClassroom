@@ -1,0 +1,37 @@
+﻿@page
+@model eUcionica.Pages.Predmeti.PredmetiModel
+@{
+    ViewData["Title"] = "Predmeti";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Predmeti</h1>
+
+
+<table class="table table-bordered table-success table-hover">
+    <thead>
+        <tr>
+            <th>
+                Naziv predmeta
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Predmeti)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.ID">Izmeni</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.ID">Izbrisi</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<p>
+    <a asp-page="Create">Dodaj novi predmet</a>
+</p>

@@ -1,0 +1,28 @@
+﻿@page
+@model eUcionica.Pages.Test.TestModel
+@{
+    ViewData["Title"] = "Izaberi testove";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Odaberi test koji želiš raditi</h1>
+<br />
+<table class="table table-bordered table-success table-hover">
+    <thead>
+        <tr>
+            <th>Naziv predmeta</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Predmeti)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                <td>
+                    <a asp-page="./Generisanje" asp-route-id="@item.ID">Pokreni test</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

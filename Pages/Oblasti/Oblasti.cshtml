@@ -1,0 +1,36 @@
+﻿@page
+@model eUcionica.Pages.Oblasti.OblastiModel
+@{
+    ViewData["Title"] = "Oblasti";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+<h1>Oblasti</h1>
+
+
+<table class="table table-bordered table-success table-hover">
+    <thead>
+        <tr>
+            <th>
+                Naziv oblasti
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Oblasti)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.ID">Izmeni</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.ID">Obrisi</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<p>
+    <a asp-page="Create">Dodaj novu oblast</a>
+</p>

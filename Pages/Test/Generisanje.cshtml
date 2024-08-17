@@ -1,0 +1,36 @@
+﻿@page
+@model eUcionica.Pages.Test.GenerisanjeModel
+@{
+    ViewData["Title"] = "Random Test";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+<h1>Test</h1>
+
+@if (Model.Pitanja != null && Model.Pitanja.Any())
+{
+    <form method="post">
+        <div class="container mt-4">
+            @foreach (var pitanje in Model.Pitanja)
+            {
+                <div class="mb-4">
+                    <label for="odgovor-@pitanje.ID" class="form-label">
+                        <strong>@pitanje.Pitanje</strong>
+                    </label>
+                    <textarea id="odgovor-@pitanje.ID" name="Odgovori[@pitanje.ID]" class="form-control" rows="3" placeholder="Unesite vaš odgovor ovde"></textarea>
+                    <input type="hidden" value="@pitanje.ID" name="PitanjaIDs[]" />
+                    <hr />
+                </div>
+            }
+            <button type="submit" class="btn btn-success">Završi test</button>
+        </div>
+    </form>
+}
+
+else
+{
+    <p>Izabrani predmet nema dostupnih pitanja. Da li zelis da ih kreiras?</p>
+    <a asp-page="../Pitanja/Create" class="btn btn-primary">Kreiraj pitanje</a>
+}
+<h1></h1>
+
+<a asp-page="./Test" class="btn btn-secondary">Vrati se nazad</a>

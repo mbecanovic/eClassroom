@@ -1,0 +1,60 @@
+﻿@page
+@model eUcionica.Pages.PitanjaPage.DetailsModel
+@{
+    ViewData["Title"] = "Detalji pitanja";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Detalji pitanja</h1>
+
+<hr />
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">
+            ID:
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Pitanja.ID
+        </dd>
+
+        <dt class="col-sm-2">
+            Predmet:
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Pitanja.IDPredmet
+        </dd>
+
+        <dt class="col-sm-2">
+            Oblast:
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Pitanja.IDOblast
+        </dd>
+
+        <dt class="col-sm-2">
+            Nivo:
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Pitanja.Nivo
+        </dd>
+
+        <dt class="col-sm-2">
+            Pitanje:
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Pitanja.Pitanje
+        </dd>
+
+        <dt class="col-sm-2">
+            Odgovor:
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Pitanja.Odgovor
+        </dd>
+    </dl>
+</div>
+
+<div>
+    <a asp-page="./Pitanja" class="btn btn-secondary">Vrati se nazad</a>
+</div>

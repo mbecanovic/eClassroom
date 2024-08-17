@@ -1,0 +1,29 @@
+﻿@page
+@model eUcionica.Pages.Predmeti.DeleteModel
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Brisanje</h1>
+<div>
+    
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Predmet
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Predmeti.Name)
+        </dd>
+    </dl>
+    <hr />
+    <h7>Da li si siguran da želiš da obrišeš ovaj predmet?</h7>
+    <h1></h1>
+    <form method="post">
+        <input type="hidden" asp-for="Predmeti.ID" />
+        <input type="submit" value="Obriši" class="btn btn-danger" /> 
+        <h1></h1>
+        <a asp-page="./Predmeti" class="btn btn-secondary">Vrati se nazad</a>
+    </form>
+</div>

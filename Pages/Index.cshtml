@@ -1,0 +1,37 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Dobrodošao na eUčionicu</h1>
+    <p>Pomozi sebi i svojim prijateljima da lakše savladate oblasti i učinite učenje interesantnim.</p>
+</div>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card card-hover" onclick="location.href='@Url.Page("/Test/Test")'" style="cursor: pointer;">
+                <img src="~/Images/school-testing.jpg" class="card-img-top" alt="School Testing Image" />
+                <div class="card-body">
+                    <h5 class="card-title">Testiranje može da počne!</h5>
+                    <p class="card-text">Uz elektronsku učionicu, na samo par klikova olakšaj učenje i učini ga zanimljvim tako što ćeš generisati nasumičan test koji se sastoji iz pitanja koja si ti definisao!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <style>
+        .card-hover:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transform: scale(1.02);
+            transition: transform 0.2s;
+        }
+    </style>
+}
